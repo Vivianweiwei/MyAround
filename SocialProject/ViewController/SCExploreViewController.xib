@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SCExploreViewController">
+            <connections>
+                <outlet property="mapView" destination="VWs-bm-jCy" id="vuk-PJ-Onu"/>
+                <outlet property="reloadButton" destination="dv9-e5-oES" id="rcc-0u-KJr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="VWs-bm-jCy">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </mapView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dv9-e5-oES">
+                    <rect key="frame" x="97.5" y="507" width="180" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="8IG-0Y-vbB"/>
+                        <constraint firstAttribute="height" constant="40" id="BNU-a4-PUc"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="VWs-bm-jCy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="IQf-UF-nSS"/>
+                <constraint firstAttribute="bottom" secondItem="dv9-e5-oES" secondAttribute="bottom" constant="120" id="Uib-hv-ziW"/>
+                <constraint firstItem="dv9-e5-oES" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gIb-pv-Y03"/>
+                <constraint firstItem="VWs-bm-jCy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mld-lS-6yq"/>
+                <constraint firstAttribute="bottom" secondItem="VWs-bm-jCy" secondAttribute="bottom" id="n1o-Ix-IsU"/>
+                <constraint firstItem="dv9-e5-oES" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rky-jg-M18"/>
+                <constraint firstAttribute="trailing" secondItem="VWs-bm-jCy" secondAttribute="trailing" id="tiF-6N-zpB"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
